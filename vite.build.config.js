@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import {esbuildCommonjs} from "@originjs/vite-plugin-commonjs";
 
 export default defineConfig({
     plugins: [
@@ -11,11 +10,4 @@ export default defineConfig({
             ],
         }),
     ],
-    optimizeDeps: {
-        esbuildOptions:{
-            plugins:[
-                esbuildCommonjs(['wow.js'])
-            ]
-        }
-    }
 });
