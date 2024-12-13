@@ -1,0 +1,92 @@
+.ui {
+
+  &-input {
+    position: relative;
+
+    &__label {
+      display: block;
+      padding-left: 24px;
+      margin-bottom: 4px;
+    }
+
+    >label {
+      display: block;
+    }
+
+    input {
+      font-weight: 500;
+      font-size: 1rem;
+      position: relative;
+      width: calc(100% - 40px);
+      background: #F5F3FF;
+      box-shadow: 1px 1px 3px 0px #0000001A inset;
+      border-radius: 10px;
+      padding: 20px;
+      z-index: 3;
+      transition: .4s;
+
+      &:focus {
+
+      }
+
+      &::placeholder {
+
+      }
+    }
+  }
+}
+
+.btn {
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: .625rem;
+  background-color: #FFA500;
+  white-space: nowrap;
+  padding: 15px 25px;
+  transition: .3s;
+
+  >span {
+    position: relative;
+    z-index: 2;
+  }
+
+  @media screen and (any-hover: hover) {
+    &:hover {
+      background-color: #ef9800;
+    }
+
+    &:active {
+      background-color: #d68b00;
+    }
+  }
+}
+
+.title {
+  font-family: 'FuturaFuturisC';
+  font-weight: 700;
+  font-size: 45px;
+  color: #111111;
+  text-align: center;
+
+  @media screen and (max-width: #{$tabletM}) {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+.section {
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+}

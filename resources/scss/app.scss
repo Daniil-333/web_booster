@@ -1,0 +1,23 @@
+@use "sass:math";
+
+@import '@splidejs/splide/dist/css/splide.min';
+
+@import "vars/colors";
+@import "vars/variables";
+
+@import "base/mixin";
+@import "base/null";
+@import "base/elements";
+
+@include font('FuturaBookC', 'FuturaBookC Regular', 400, 'normal');
+@include font('FuturaDemiC', 'FuturaDemiC Regular', 400, 'normal');
+@include font('FuturaFuturisC', 'FuturaFuturisC Regular', 400, 'normal');
+@include font('FuturaFuturisC', 'FuturaFuturisC-Bold', 700, 'normal');
+@include font('FuturaLightC', 'FuturaLightC-Regular', 400, 'normal');
+
+@import "base";
+
+@import "./parts/header";
+@import "./parts/footer";
+
+@import "./page/main";
