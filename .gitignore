@@ -21,3 +21,4 @@ composer.lock
 /.fleet
 /.idea
 /.vscode
+/.osp
